@@ -1,0 +1,99 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #000;
+}
+
+header {
+  background-color: #754ef9;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+main {
+  padding: 20px;
+  text-align: center; /* Center content in main */
+}
+
+.intro {
+  background-color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  color: #754ef9;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.intro p {
+  font-size: 1.2em;
+  padding: 25px;
+  color: aliceblue;
+}
+
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.gallery {
+  width: 95%;
+  height: 600px;
+  display: flex;
+  gap: 1rem;
+}
+
+.gallery > div {
+  flex: 1;
+  transition: all 1s;
+}
+
+.gallery > div:nth-child(1) {
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery > div:nth-child(2) {
+  background-image: url(2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery > div:nth-child(3) {
+  background-image: url(3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery > div:nth-child(4) {
+  background-image: url(4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.gallery > div:hover {
+  flex: 2;
+}
